@@ -11,8 +11,10 @@ sudo apt-get update
 sudo apt-get install vim curl git
 sudo mkdir /usr/local/go
 sudo chown $USER:$USER /usr/local/go
+cd /tmp
 curl -O https://storage.googleapis.com/golang/go$GOVERSION.linux-amd64.tar.gz
 tar -C /usr/local/ -xzf go$GOVERSION.linux-amd64.tar.gz
+cd ~/
 
 echo Configuring local Go development environment ...
 mkdir -p ~/go/src ~/go/pkg ~/go/bin ~/go/src/github.com/$GITUSER
