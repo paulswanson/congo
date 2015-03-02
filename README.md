@@ -1,4 +1,4 @@
-# Congo: Configure Go Development Environment
+# Congo: Configure Go!
 
 This script configures the Go development environment on a freshly installed Ubuntu 14.04 (amd64) desktop to my personal specification.
 
