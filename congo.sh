@@ -1,6 +1,6 @@
 #!/bin/sh
 # Configure Go Development environment for the current user on a fresh Ubuntu 14.04 amd64 desktop
-GITUSER="paulswanson"
+GITHUBUSER="paulswanson"
 GOVERSION="1.4.2"
 
 cd ~/
@@ -17,10 +17,10 @@ tar -C /usr/local/ -xzf go$GOVERSION.linux-amd64.tar.gz
 cd ~/
 
 echo Configuring local Go development environment ...
-mkdir -p ~/go/src ~/go/pkg ~/go/bin ~/go/src/github.com/$GITUSER
+mkdir -p ~/go/src ~/go/pkg ~/go/bin ~/go/src/github.com/$GITHUBUSER
 EGOBIN="export GOBIN=/usr/local/go/bin"
 EGOPATH="export GOPATH=\$HOME/go"
-EGOPAUL="export GOPAUL=\$GOPATH/src/github.com/$GITUSER"
+EGOPAUL="export GOPAUL=\$GOPATH/src/github.com/$GITHUBUSER"
 EPATH="export PATH=\$PATH:\$GOPATH/bin:\$GOBIN"
 echo $EGOBIN >> ~/.profile
 echo $EGOPATH >> ~/.profile
